@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precious Memories - Contact</title>
+    <style>
+        /* Global font and styling */
+        @font-face {
+            font-family: 'Krysttal Spears';
+            src: url('fonts/KrysttalSpears.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'Krysttal Spears', cursive;
+            background-color: #fdf6e3;
+            color: #c8a165;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #dddddd;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #c8a165;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            color: #ffb74d;
+        }
+
+        .content {
+            padding: 50px;
+        }
+
+        .form-section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .form-section form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-section label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .form-section input, .form-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #c8a165;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #333;
+            font-family: 'Krysttal Spears', cursive;
+        }
+
+        .form-section textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .form-section input[type="submit"] {
+            background-color: #c8a165;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+
+        .form-section input[type="submit"]:hover {
+            background-color: #ffb74d;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .contact-buttons a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 15px;
+            background-color: #c8a165;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #dddddd;
+            padding: 10px;
+            text-align: center;
+            color: #c8a165;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Precious Memories" style="height: 40px;">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Whether you’re interested in scheduling a photoshoot or simply want more information about our services, feel free to get in touch. You can reach us via email or follow us on our social media platforms.</p>
+
+        <div class="form-section">
+            <h3>Contact Form</h3>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="details">How can we help you?</label>
+                <textarea id="details" name="details" placeholder="Please let us know your requirements or questions"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="assets/images/facebook.png" alt="Facebook" style="height: 20px;"></a>
+            <a href="https://instagram.com" target="_blank"><img src="assets/images/instagram.png
+                " alt="Instagram" style="height: 20px;"></a>
+            <a href="mailto:info@preciousmemories.com"><img src="assets/images/email.png" alt="Email" style="height: 20px;"></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Precious Memories. All rights reserved.</p>
+    </footer>
+</body>
+</html>

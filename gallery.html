@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precious Memories - Gallery</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Krysttal Spears', cursive;
+            background-color: #dddddd;
+            color: #c8a165;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color:#dddddd;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #c8a165;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            color: #ffb74d;
+        }
+
+        /* Enlarge the logo and make it more visible */
+        .logo img {
+            height: 100px; /* Increased logo size */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .logo img:hover {
+            transform: scale(1.1); /* Slight enlargement on hover for emphasis */
+        }
+
+        /* Scroll animation styling for images */
+        .scroll-image {
+            opacity: 0; /* Images are hidden initially */
+            transform: translateY(20px); /* Slightly offset downward */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth animation */
+            width: 100%; /* Full width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .scroll-image.in-view {
+            opacity: 1; /* Images become visible */
+            transform: translateY(0); /* Reset position to normal */
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 50px 80px;
+            text-align: center;
+        }
+
+        .gallery-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .gallery-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #333; /* Darker color for text visibility */
+        }
+
+        footer {
+            background-color:#dddddd;
+            padding: 20px;
+            text-align: center;
+            color: #c8a165;
+        }
+
+        @media screen and (max-width: 768px) {
+            .gallery-section {
+                padding: 20px;
+            }
+
+            nav ul {
+                flex-direction: column; /* Stack links on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Precious Memories">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="gallery-section">
+        <h1>Gallery</h1>
+        <p>Welcome to our gallery! Here you can explore a collection of our favorite moments captured through our lens. Each photograph tells a story and reflects the emotions of the occasion. We take pride in our ability to immortalize those precious memories that you can cherish forever. Browse through our portfolio and let us know what you think!</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="assets/images/gallery2.jpg" alt="Gallery Image 1" class="scroll-image">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/gallery1.jpg" alt="Gallery Image 2" class="scroll-image">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/gallery3.jpg" alt="Gallery Image 3" class="scroll-image">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/gallery4.jpg" alt="Gallery Image 4" class="scroll-image">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Precious Memories Photography Studio. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Scroll Animation -->
+    <script src="scrollAnimation.js"></script>
+</body>
+</html>

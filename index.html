@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Precious Memories - Home</title>
+    <style>
+        @font-face {
+            font-family: 'Krysttal Spears';
+            src: url('fonts/KrysttalSpears.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'Krysttal Spears', cursive;
+            background-color: #dddddd;
+            color: #c8a165;
+            margin: 0;
+            padding: 0;
+        }
+        /* Enlarge the logo and make it more visible */
+.logo img {
+    height: 80px; /* Increased logo size */
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Slight enlargement on hover for emphasis */
+}
+
+/* Scroll animation styling for images */
+.scroll-image {
+    opacity: 0; /* Images are hidden initially */
+    transform: translateY(20px); /* Slightly offset downward */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth animation */
+}
+
+.scroll-image.in-view {
+    opacity: 1; /* Images become visible */
+    transform: translateY(0); /* Reset position to normal */
+}
+
+
+        nav {
+            background-color: #dddddd;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #c8a165;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            color: #ffb74d;
+        }
+
+        .hero {
+
+            padding: 20px 0;
+            /* Adds padding for spacing */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #c8a165;
+            /* Match the font color with other text on the site */
+            text-align: center;
+            /* Center-aligns the text */
+        }
+
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            /* Makes the image fill the full width of its container */
+            height: auto;
+            /* Maintains the aspect ratio of the image */
+            object-fit: cover;
+            /* Ensures the image covers the area without distortion */
+            max-width: none;
+            /* Removes any maximum width constraints */
+        }
+
+
+        footer {
+            background-color: #dddddd;
+            padding: 10px;
+            text-align: center;
+            color: #c8a165;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #c8a165;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Precious Memories" style="height: 40px;">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Welcome to Precious Memories</h1>
+    </div>
+
+    <div class="content">
+        <h2>Creating Memories That Last Forever</h2>
+        <p>At Precious Memories, we specialize in capturing the beauty of life's most cherished moments. From weddings
+            to family portraits, our team of professional photographers has a passion for making every shot unique and
+            special. Whether you're looking for high-quality photos for a special occasion or simply want to capture a
+            moment in time, we are here to create beautiful and timeless images.</p>
+    </div>
+
+    <div class="gallery">
+        <img src="assets/images/sample1.jpg" alt="Sample Image 1">
+        <img src="assets/images/sample2.jpg" alt="Sample Image 2">
+        <img src="assets/images/sample3.jpg" alt="Sample Image 3">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Precious Memories. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="assets/images/facebook.png" alt="Facebook"
+                    style="height: 20px;"></a>
+            <a href="https://instagram.com" target="_blank"><img src="assets/images/instagram.png" alt="Instagram"
+                    style="height: 20px;"></a>
+            <a href="mailto:info@preciousmemories.com"><img src="assets/images/email.png" alt="Email"
+                    style="height: 20px;"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

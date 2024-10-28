@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precious Memories - Experience & Skills</title>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujzLg2qRI+YrM6e3WufXkYd/PhZu6pjWJRVr4pB7+6cYZW9R1wUlUweY+I2z5j3vFVsEx5RW0Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Global styling */
+        @font-face {
+            font-family: 'Krysttal Spears';
+            src: url('fonts/KrysttalSpears.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Krysttal Spears', cursive;
+            background-color: #dddddd;
+            color: #c8a165;
+        }
+
+        nav {
+            background-color: #dddddd;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #c8a165;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            color: #ffb74d;
+        }
+
+        .experience-section {
+            padding: 50px 80px;
+        }
+
+        .experience-section h1 {
+            font-size: 3rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .experience-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .experience-list li {
+            margin: 20px 0;
+        }
+
+        .skills-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .skills-gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border: 2px solid #c8a165;
+            border-radius: 10px;
+        }
+
+        .testimonial-section {
+            background-color: #dddddd;
+            padding: 40px;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        .testimonial-section h2 {
+            text-align: center;
+            color: #c8a165;
+            margin-bottom: 20px;
+        }
+
+        .testimonial {
+            font-style: italic;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #dddddd;
+            padding: 20px;
+            text-align: center;
+            color: #c8a165;
+        }
+
+        .footer-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .footer-buttons a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 15px;
+            margin: 0 10px;
+            background-color: #c8a165;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-buttons a i {
+            margin-right: 8px; /* Space between icon and text */
+        }
+
+        .footer-buttons a:hover {
+            background-color: #ffb74d;
+        }
+
+        @media screen and (max-width: 768px) {
+            .experience-section {
+                padding: 20px;
+            }
+
+            .skills-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="experience-section">
+        <h1>Experience & Skills</h1>
+        <ul class="experience-list">
+            <li>Over a decade of experience in professional photography.</li>
+            <li>Specialized in wedding, portrait, event, and commercial photography.</li>
+            <li>Advanced image editing skills using software like Adobe Photoshop and Lightroom.</li>
+            <li>Proficient in handling high-end camera equipment from brands like Canon and Nikon.</li>
+            <li>Extensive experience working with diverse clients, including magazines and digital publications.</li>
+            <li>Strong ability to adapt to various styles, including contemporary, traditional, and candid photography.</li>
+        </ul>
+
+        <div class="skills-gallery">
+            <img src="assets/images/skill1.jpg" alt="Photography in Action">
+            <img src="assets/images/skill2.jpg" alt="Editing Skills Display">
+            <img src="assets/images/skill3.jpg" alt="Event Photography">
+        </div>
+
+        <div class="testimonial-section">
+            <h2>Client Testimonials</h2>
+            <p class="testimonial">"The team at Precious Memories made our wedding unforgettable with their beautiful photos!" - Sarah & John</p>
+            <p class="testimonial">"Professional, creative, and truly talented photographers. Highly recommended!" - Digital Trends Magazine</p>
+            <p class="testimonial">"Their attention to detail and ability to capture emotions is just remarkable!" - Emily R.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Precious Memories Photography Studio. All rights reserved.</p>
+        <div class="footer-buttons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+            <a href="mailto:info@preciousmemories.com"><i class="fas fa-envelope"></i>Email</a>
+        </div>
+    </footer>
+</body>
+</html>
